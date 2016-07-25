@@ -38,7 +38,6 @@ var format = function (list) {
     for (var i = 0; i < list.length; i++) {
         var item = list[i];
         var data = {
-            id: '' + i,
             name: item.content,
             level: item.level
         };
@@ -51,6 +50,20 @@ var items = getItems(readme);
 var f2e = filter(items);
 var formated = format(f2e);
 
+var generateLinksAndDescription = function (str) {
+    var patt = /\[([^\]]+)\]\(([^)]+)\)(.*)/g;
+var result;
+
+var list = [];
+while ((result = patt.exec(str)) != null) {
+    var projectName = result[1];
+    var projectLink = result[2];
+    var projectDesc = result[3];
+    list.push({name: projectName, link: projectLink, desc: projectDesc});
+}
+return list;
+};
+
 var buildTree = function (list) {
     var root = null;
     for (var i = 0; i < list.length; i++) {
@@ -62,29 +75,14 @@ var buildTree = function (list) {
 
         var lastLevel0 = root.children;
         if (item.level === 1) {
-            //delete item.level;
             lastLevel0.push(item);
         }
 
         if (item.level === 2) {
             var lastLevel1 = lastLevel0[lastLevel0.length - 1];
             lastLevel1.children = lastLevel1.children || [];
-            lastLevel1.children.push(item);
-        }
-
-        if (item.level === 3) {
-            var lastLevel1Child = lastLevel0[lastLevel0.length - 1].children;
-            var lastLevel2 = lastLevel1Child[lastLevel1Child.length - 1];
-            lastLevel2.children = lastLevel2.children || [];
-            lastLevel2.children.push(item);
-        }
-
-        if (item.level === 4) {
-            var lastLevel1Child = lastLevel0[lastLevel0.length - 1].children;
-            var lastLevel2Child = lastLevel1Child[lastLevel1Child.length - 1].children;
-            var lastLevel3 = lastLevel2Child[lastLevel2Child.length - 1];
-            lastLevel3.children = lastLevel3.children || [];
-            lastLevel3.children.push(item);
+            let itemDesc = generateLinksAndDescription(item.name);
+            lastLevel1.children.push(itemDesc[0]);
         }
         delete item.level;
     }
@@ -92,4 +90,5 @@ var buildTree = function (list) {
 };
 
 var tree = buildTree(formated);
+tree.source = "http://awesome-practise-project.phodal.com/";
 fs.writeFileSync(path.join(__dirname, '../api/all.json'), JSON.stringify(tree, null, '  '));
