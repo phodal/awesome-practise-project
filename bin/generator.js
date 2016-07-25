@@ -101,5 +101,5 @@ var buildTree = function (list) {
 var api = {};
 var tree = buildTree(formated);
 api.source = "http://awesome-practise-project.phodal.com/";
-api.content = tree;
+api.content = tree.domains;
 fs.writeFileSync(path.join(__dirname, '../api/all.json'), JSON.stringify(api, null, '  '));

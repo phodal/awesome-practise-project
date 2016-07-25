@@ -1,53 +1,50 @@
 {
   "source": "http://awesome-practise-project.phodal.com/",
-  "content": {
-    "name": "Awesome Projects",
-    "domains": [
-      {
-        "name": "前端",
-        "subdomains": [
-          {
-            "name": "Node.js",
-            "projects": [
-              {
-                "name": "Yeoman Node Generator",
-                "link": "https://github.com/yeoman/generator-node",
-                "desc": " Yeomans node generator"
-              },
-              {
-                "name": "Yeoman Node Generator",
-                "link": "https://github.com/yeoman/generator-node",
-                "desc": " Yeomans node generator"
-              }
-            ]
-          },
-          {
-            "name": "ReactJS",
-            "projects": [
-              {
-                "name": "React Boilerplate",
-                "link": "https://github.com/petehunt/react-boilerplate",
-                "desc": " Boilerplate for creating a React npm package"
-              },
-              {
-                "name": "React Boilerplate",
-                "link": "https://github.com/rackt/react-boilerplate",
-                "desc": " React boilerplate with React Router and webpack"
-              },
-              {
-                "name": "React Transorm Boilerplate",
-                "link": "https://github.com/gaearon/react-transform-boilerplate",
-                "desc": " A new Webpack boilerplate with hot reloading React components, and error handling on module and component level"
-              },
-              {
-                "name": "Library Boilerplate",
-                "link": "https://github.com/gaearon/library-boilerplate",
-                "desc": " An opinionated boilerplate for React libraries including ESLint, Mocha, Babel, Webpack and an example powered by Webpack Dev Server and React Hot Loader"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "content": [
+    {
+      "name": "前端",
+      "subdomains": [
+        {
+          "name": "Node.js",
+          "projects": [
+            {
+              "name": "Yeoman Node Generator",
+              "link": "https://github.com/yeoman/generator-node",
+              "desc": " Yeomans node generator"
+            },
+            {
+              "name": "Yeoman Node Generator",
+              "link": "https://github.com/yeoman/generator-node",
+              "desc": " Yeomans node generator"
+            }
+          ]
+        },
+        {
+          "name": "ReactJS",
+          "projects": [
+            {
+              "name": "React Boilerplate",
+              "link": "https://github.com/petehunt/react-boilerplate",
+              "desc": " Boilerplate for creating a React npm package"
+            },
+            {
+              "name": "React Boilerplate",
+              "link": "https://github.com/rackt/react-boilerplate",
+              "desc": " React boilerplate with React Router and webpack"
+            },
+            {
+              "name": "React Transorm Boilerplate",
+              "link": "https://github.com/gaearon/react-transform-boilerplate",
+              "desc": " A new Webpack boilerplate with hot reloading React components, and error handling on module and component level"
+            },
+            {
+              "name": "Library Boilerplate",
+              "link": "https://github.com/gaearon/library-boilerplate",
+              "desc": " An opinionated boilerplate for React libraries including ESLint, Mocha, Babel, Webpack and an example powered by Webpack Dev Server and React Hot Loader"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
