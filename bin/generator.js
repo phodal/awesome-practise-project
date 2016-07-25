@@ -52,43 +52,54 @@ var formated = format(f2e);
 
 var generateLinksAndDescription = function (str) {
     var patt = /\[([^\]]+)\]\(([^)]+)\)(.*)/g;
-var result;
+    var result;
 
-var list = [];
-while ((result = patt.exec(str)) != null) {
-    var projectName = result[1];
-    var projectLink = result[2];
-    var projectDesc = result[3];
-    list.push({name: projectName, link: projectLink, desc: projectDesc});
-}
-return list;
+    var list = [];
+    while ((result = patt.exec(str)) != null) {
+        var projectName = result[1];
+        var projectLink = result[2];
+        var projectDesc = result[3];
+        list.push({name: projectName, link: projectLink, desc: projectDesc});
+    }
+    return list;
 };
 
 var buildTree = function (list) {
     var root = null;
     for (var i = 0; i < list.length; i++) {
         var item = list[i];
+
         if (root === null) {
             root = item;
-            root.subdomains = [];
+            root.domains = [];
         }
 
-        var lastLevel0 = root.subdomains;
+        var lastLevel0 = root.domains;
         if (item.level === 1) {
             lastLevel0.push(item);
         }
 
         if (item.level === 2) {
             var lastLevel1 = lastLevel0[lastLevel0.length - 1];
-            lastLevel1.projects = lastLevel1.projects || [];
-            let itemDesc = generateLinksAndDescription(item.name);
-            lastLevel1.projects.push(itemDesc[0]);
+            lastLevel1.subdomains = lastLevel1.subdomains || [];
+            lastLevel1.subdomains.push(item);
         }
+
+        if (item.level === 3) {
+            var lastLevel1Child = lastLevel0[lastLevel0.length - 1].subdomains;
+            var lastLevel2 = lastLevel1Child[lastLevel1Child.length - 1];
+            lastLevel2.projects = lastLevel2.projects || [];
+            var itemDesc = generateLinksAndDescription(item.name);
+            lastLevel2.projects.push(itemDesc[0]);
+        }
+
         delete item.level;
     }
     return root;
 };
 
+var api = {};
 var tree = buildTree(formated);
-tree.source = "http://awesome-practise-project.phodal.com/";
-fs.writeFileSync(path.join(__dirname, '../api/all.json'), JSON.stringify(tree, null, '  '));
+api.source = "http://awesome-practise-project.phodal.com/";
+api.content = tree;
+fs.writeFileSync(path.join(__dirname, '../api/all.json'), JSON.stringify(api, null, '  '));
