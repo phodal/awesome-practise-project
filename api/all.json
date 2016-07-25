@@ -1,0 +1,16 @@
+{
+  "id": "0",
+  "name": "前端",
+  "children": [
+    {
+      "id": "1",
+      "name": "Node.js",
+      "children": [
+        {
+          "id": "2",
+          "name": "[Yeoman Node Generator](https://github.com/yeoman/generator-node) Yeomans node generator"
+        }
+      ]
+    }
+  ]
+}
