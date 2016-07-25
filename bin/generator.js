@@ -70,19 +70,19 @@ var buildTree = function (list) {
         var item = list[i];
         if (root === null) {
             root = item;
-            root.children = [];
+            root.subdomains = [];
         }
 
-        var lastLevel0 = root.children;
+        var lastLevel0 = root.subdomains;
         if (item.level === 1) {
             lastLevel0.push(item);
         }
 
         if (item.level === 2) {
             var lastLevel1 = lastLevel0[lastLevel0.length - 1];
-            lastLevel1.children = lastLevel1.children || [];
+            lastLevel1.projects = lastLevel1.projects || [];
             let itemDesc = generateLinksAndDescription(item.name);
-            lastLevel1.children.push(itemDesc[0]);
+            lastLevel1.projects.push(itemDesc[0]);
         }
         delete item.level;
     }
