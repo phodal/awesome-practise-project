@@ -5,6 +5,16 @@
       "name": "前端",
       "subdomains": [
         {
+          "name": "必看",
+          "projects": [
+            {
+              "name": "TodoMVC",
+              "link": "https://github.com/tastejs/todomvc",
+              "desc": " 包含了一系列不同框架的Todo MVC，如Backbone.js, Ember.js, AngularJS"
+            }
+          ]
+        },
+        {
           "name": "ReactJS",
           "projects": [
             {
@@ -21,6 +31,86 @@
               "name": "同架JavaScript",
               "link": "https://github.com/DavidWells/isomorphic-react-example",
               "desc": " 这是一个基于React和Node.js、Express的示例，并且还包含视频。介绍了如何在前后端使用相同的代码来完成逻辑。"
+            }
+          ]
+        },
+        {
+          "name": "Angular.js",
+          "projects": [
+            {
+              "name": "Awesome AngularJS",
+              "link": "https://github.com/gianarb/awesome-angularjs",
+              "desc": " 🌀 A list of awesome AngularJs services, directives, utilities and resources."
+            }
+          ]
+        },
+        {
+          "name": "Angular 2",
+          "projects": [
+            {
+              "name": "Awesome Angular 2",
+              "link": "https://github.com/AngularClass/awesome-angular2",
+              "desc": " A curated list of awesome Angular 2 resources"
+            }
+          ]
+        },
+        {
+          "name": "Vue",
+          "projects": [
+            {
+              "name": "Awesome Vue",
+              "link": "https://github.com/vuejs/awesome-vue",
+              "desc": " A curated list of awesome things related to Vue.js"
+            }
+          ]
+        },
+        {
+          "name": "Ember.js",
+          "projects": [
+            {
+              "name": "Awesome Ember.js",
+              "link": "https://github.com/nmec/awesome-ember",
+              "desc": " A curated list of awesome Ember.js things"
+            }
+          ]
+        },
+        {
+          "name": "Riot",
+          "projects": [
+            {
+              "name": "Riot Todo",
+              "link": "https://github.com/srackham/riot-todo",
+              "desc": " 使用类似于Flux架构实现的Riot下的Todo应用。"
+            }
+          ]
+        },
+        {
+          "name": "Backbone",
+          "projects": [
+            {
+              "name": "Backbone Boilerplate",
+              "link": "https://github.com/tbranyen/backbone-boilerplate",
+              "desc": " Bakcbone.js下的工作流，包含可选的Backbone, jQuery, Lodash, Grunt, Babel, Combyne, Karma, Mocha以及Pure CSS。"
+            }
+          ]
+        },
+        {
+          "name": "Ionic",
+          "projects": [
+            {
+              "name": "Awesome Ionic",
+              "link": "https://github.com/Alexintosh/Awesome-Ionic",
+              "desc": " A curated list of awesome Ionic libraries, resources and solutions."
+            },
+            {
+              "name": "Ionic 2 会议应用",
+              "link": "https://github.com/driftyco/ionic-conference-app",
+              "desc": " 使用Ionic 2以及Typescript实现的会议应用。"
+            },
+            {
+              "name": "CNodejs Ionic",
+              "link": "https://github.com/lanceli/cnodejs-ionic",
+              "desc": " 使用Ionic实现的https://cnodejs.org的手机APP。"
             }
           ]
         }
@@ -41,6 +131,16 @@
               "name": "Node.js Express Demos",
               "link": "https://github.com/bsspirit/nodejs-demo",
               "desc": " 这个项目原本是依照《Node.js开发指南》书中介绍的项目开始的，然而它讲的是Express2.x的，这个项目则以Express 3.x、Express 4.x为例子展开。"
+            }
+          ]
+        },
+        {
+          "name": "Laravel",
+          "projects": [
+            {
+              "name": "Awesome Laravel",
+              "link": "https://github.com/chiraggude/awesome-laravel",
+              "desc": " A curated list of awesome bookmarks, packages, tutorials, videos and other cool resources from the Laravel ecosystem."
             }
           ]
         },
@@ -135,7 +235,7 @@
             {
               "name": "AngularJS + Flask Boilerplate App",
               "link": "https://github.com/shea256/angular-flask",
-              "desc": " 以Flask作为后端，Angular.js作为前端的Web应用模板。"
+              "desc": " 以Flask作为后端，Angular.js作为前端的Web应用模板"
             }
           ]
         }
