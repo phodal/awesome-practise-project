@@ -5,42 +5,137 @@
       "name": "前端",
       "subdomains": [
         {
+          "name": "ReactJS",
+          "projects": [
+            {
+              "name": "Awesome React",
+              "link": "https://github.com/enaqx/awesome-react",
+              "desc": " A collection of awesome things regarding React ecosystem."
+            },
+            {
+              "name": "React Demos",
+              "link": "https://github.com/ruanyf/react-demos",
+              "desc": " 由阮一峰收集的React.js的相关Demos。加入索引时，一共有13个Demo，从简单的渲染JSX、Component的生命周期，到服务端渲染。"
+            },
+            {
+              "name": "同架JavaScript",
+              "link": "https://github.com/DavidWells/isomorphic-react-example",
+              "desc": " 这是一个基于React和Node.js、Express的示例，并且还包含视频。介绍了如何在前后端使用相同的代码来完成逻辑。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "后端",
+      "subdomains": [
+        {
           "name": "Node.js",
           "projects": [
             {
-              "name": "Yeoman Node Generator",
-              "link": "https://github.com/yeoman/generator-node",
-              "desc": " Yeomans node generator"
+              "name": "Awesome Nodejs",
+              "link": "https://github.com/sindresorhus/awesome-nodejs",
+              "desc": " Delightful Node.js packages and resources"
             },
             {
-              "name": "Yeoman Node Generator",
-              "link": "https://github.com/yeoman/generator-node",
-              "desc": " Yeomans node generator"
+              "name": "Node.js Express Demos",
+              "link": "https://github.com/bsspirit/nodejs-demo",
+              "desc": " 这个项目原本是依照《Node.js开发指南》书中介绍的项目开始的，然而它讲的是Express2.x的，这个项目则以Express 3.x、Express 4.x为例子展开。"
             }
           ]
         },
         {
-          "name": "ReactJS",
+          "name": "Spring MVC",
           "projects": [
             {
-              "name": "React Boilerplate",
-              "link": "https://github.com/petehunt/react-boilerplate",
-              "desc": " Boilerplate for creating a React npm package"
+              "name": "Spring MVC Showcase",
+              "link": "https://github.com/spring-projects/spring-mvc-showcase",
+              "desc": " 这个项目带有Spring MVC的大部分功能的演示，如从正常的Controller，到表单、文件上传、异常处理等等。"
             },
             {
-              "name": "React Boilerplate",
-              "link": "https://github.com/rackt/react-boilerplate",
-              "desc": " React boilerplate with React Router and webpack"
+              "name": "Spring Blog",
+              "link": "https://github.com/Raysmond/SpringBlog",
+              "desc": " 用Spring Boot/MVC/JPA + Hibernate + MySQL + Redis + Bootstrap + Jade实现的博客系统。"
+            }
+          ]
+        },
+        {
+          "name": "Spring Boot",
+          "projects": [
+            {
+              "name": "Spring Boot samples",
+              "link": "https://github.com/netgloo/spring-boot-samples",
+              "desc": " 这个项目包含一系列的Spring Boot示例，当然还有相关的介绍。"
             },
             {
-              "name": "React Transorm Boilerplate",
-              "link": "https://github.com/gaearon/react-transform-boilerplate",
-              "desc": " A new Webpack boilerplate with hot reloading React components, and error handling on module and component level"
+              "name": "Spring Boot微服务模板",
+              "link": "https://github.com/rohitghatol/spring-boot-microservices",
+              "desc": " 这个项目介绍了如何用Spring Boot、Spring Cloud、Spring OAuth 2和Netflix OSS来实现微服务架构。"
+            }
+          ]
+        },
+        {
+          "name": "Django",
+          "projects": [
+            {
+              "name": "Awesome Django",
+              "link": "https://github.com/rosarior/awesome-django",
+              "desc": " 大家都懂的，A curated list of awesome Django apps, projects and resources。"
+            }
+          ]
+        },
+        {
+          "name": "Flask",
+          "projects": [
+            {
+              "name": "Awesome Flask",
+              "link": "https://github.com/humiaozuzu/awesome-flask",
+              "desc": " A curated list of awesome Flask resources and plugins."
             },
             {
-              "name": "Library Boilerplate",
-              "link": "https://github.com/gaearon/library-boilerplate",
-              "desc": " An opinionated boilerplate for React libraries including ESLint, Mocha, Babel, Webpack and an example powered by Webpack Dev Server and React Hot Loader"
+              "name": "Flask Boilerplate",
+              "link": "https://github.com/mjhea0/flask-boilerplate",
+              "desc": " 一个基于Flask、 Flask-SQLAlchemy、Flask-WTF、Fabric、Coverage、Bootstrap的Web应用。"
+            }
+          ]
+        },
+        {
+          "name": "Rails",
+          "projects": [
+            {
+              "name": "Awesome Rails",
+              "link": "https://github.com/ekremkaraca/awesome-rails",
+              "desc": " A collection / list of awesome projects, sites made with Rails."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "前后端结合",
+      "subdomains": [
+        {
+          "name": "React",
+          "projects": [
+            {
+              "name": "React Starter Kit",
+              "link": "https://github.com/kriasoft/react-starter-kit",
+              "desc": " 基于Node.js, Express, GraphQL, React.js, Babel 6, PostCSS, Webpack, Browsersync提供的同构Web应用模板"
+            }
+          ]
+        },
+        {
+          "name": "Angular.js",
+          "projects": [
+            {
+              "name": "MEAN.JS",
+              "link": "https://github.com/meanjs/mean",
+              "desc": " 使用MongoDB, Express, AngularJS, and Node.js的全栈JavaScript。"
+            },
+            {
+              "name": "AngularJS + Flask Boilerplate App",
+              "link": "https://github.com/shea256/angular-flask",
+              "desc": " 以Flask作为后端，Angular.js作为前端的Web应用模板。"
             }
           ]
         }
