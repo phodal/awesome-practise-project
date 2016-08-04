@@ -1,6 +1,6 @@
 # Awesome Practise Project
 
-
+The Part of [Growth Plan](https://github.com/phodal/growth).
 
 - Awesome Projects
   - 前端
